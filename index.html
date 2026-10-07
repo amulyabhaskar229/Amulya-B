@@ -1,0 +1,1796 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of a Software Engineer - Full-stack web developer specializing in high-performance web applications, scalable APIs, and modern user experiences.">
+  <meta name="keywords" content="Software Engineer, Portfolio, Full-Stack Developer, Web Development, JavaScript, React, Node.js">
+  <meta name="author" content="Amulya">
+
+  <!-- Open Graph / Meta for Social Sharing -->
+  <meta property="og:title" content="Amulya | Software Engineer Portfolio">
+  <meta property="og:description" content="Portfolio and projects of a passionate Software Engineer.">
+  <meta property="og:type" content="website">
+
+  <title>Amulya | Software Engineer Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ======================================================== -->
+  <!-- VERTICAL NAVIGATION BAR (ANIME AESTHETIC - LEFT SIDE)    -->
+  <!-- ======================================================== -->
+  <aside class="anime-sidebar-nav" id="sidebar-nav" aria-label="Vertical Navigation Bar">
+    
+    <!-- Sidebar Header & Anime Crest -->
+    <div class="sidebar-header">
+      <a href="#hero" class="sidebar-brand" aria-label="Amulya Portfolio Home">
+        <div class="sidebar-brand-crest">
+          <span class="crest-icon">⚡</span>
+          <span class="crest-ring" aria-hidden="true"></span>
+        </div>
+        <div class="sidebar-brand-info">
+          <span class="brand-title">Amulya</span>
+          <span class="brand-subtitle">フルスタック // DEV</span>
+        </div>
+      </a>
+      <button type="button" class="sidebar-close-btn" id="sidebar-close-btn" aria-label="Close navigation menu">
+        &times;
+      </button>
+    </div>
+
+    <!-- Vertical Navigation Links -->
+    <nav class="sidebar-nav-container" aria-label="Sidebar Sections">
+      <ul class="sidebar-nav-list" role="list">
+        
+        <li class="sidebar-nav-item">
+          <a href="#hero" class="sidebar-nav-link active" data-section="hero" id="vnav-hero">
+            <span class="nav-icon" aria-hidden="true">⛩️</span>
+            <span class="nav-text">Home</span>
+            <span class="nav-kanji" aria-hidden="true">ホーム</span>
+            <span class="nav-active-pill" aria-hidden="true"></span>
+          </a>
+        </li>
+
+        <li class="sidebar-nav-item">
+          <a href="#about" class="sidebar-nav-link" data-section="about" id="vnav-about">
+            <span class="nav-icon" aria-hidden="true">🌸</span>
+            <span class="nav-text">About Me</span>
+            <span class="nav-kanji" aria-hidden="true">自己紹介</span>
+            <span class="nav-active-pill" aria-hidden="true"></span>
+          </a>
+        </li>
+
+        <li class="sidebar-nav-item">
+          <a href="#skills" class="sidebar-nav-link" data-section="skills" id="vnav-skills">
+            <span class="nav-icon" aria-hidden="true">⚡</span>
+            <span class="nav-text">Skills</span>
+            <span class="nav-kanji" aria-hidden="true">スキル</span>
+            <span class="nav-active-pill" aria-hidden="true"></span>
+          </a>
+        </li>
+
+        <li class="sidebar-nav-item">
+          <a href="#timeline" class="sidebar-nav-link" data-section="timeline" id="vnav-timeline">
+            <span class="nav-icon" aria-hidden="true">📜</span>
+            <span class="nav-text">Timeline</span>
+            <span class="nav-kanji" aria-hidden="true">経歴</span>
+            <span class="nav-active-pill" aria-hidden="true"></span>
+          </a>
+        </li>
+
+        <li class="sidebar-nav-item">
+          <a href="#projects" class="sidebar-nav-link" data-section="projects" id="vnav-projects">
+            <span class="nav-icon" aria-hidden="true">🚀</span>
+            <span class="nav-text">Projects</span>
+            <span class="nav-kanji" aria-hidden="true">実績</span>
+            <span class="nav-active-pill" aria-hidden="true"></span>
+          </a>
+        </li>
+
+        <li class="sidebar-nav-item">
+          <a href="#testimonials" class="sidebar-nav-link" data-section="testimonials" id="vnav-testimonials">
+            <span class="nav-icon" aria-hidden="true">💬</span>
+            <span class="nav-text">Testimonials</span>
+            <span class="nav-kanji" aria-hidden="true">推薦</span>
+            <span class="nav-active-pill" aria-hidden="true"></span>
+          </a>
+        </li>
+
+        <li class="sidebar-nav-item">
+          <a href="#chat" class="sidebar-nav-link" data-section="chat" id="vnav-chat">
+            <span class="nav-icon" aria-hidden="true">🤖</span>
+            <span class="nav-text">Chat</span>
+            <span class="nav-kanji" aria-hidden="true">チャット</span>
+            <span class="nav-badge-live" aria-hidden="true">LIVE</span>
+            <span class="nav-active-pill" aria-hidden="true"></span>
+          </a>
+        </li>
+
+        <li class="sidebar-nav-item">
+          <a href="#contact" class="sidebar-nav-link" data-section="contact" id="vnav-contact">
+            <span class="nav-icon" aria-hidden="true">✉️</span>
+            <span class="nav-text">Contact</span>
+            <span class="nav-kanji" aria-hidden="true">連絡</span>
+            <span class="nav-active-pill" aria-hidden="true"></span>
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <!-- Sidebar Footer with Status and Quick Controls -->
+    <div class="sidebar-footer">
+      <div class="sidebar-status-indicator">
+        <span class="status-pulse-dot" aria-hidden="true"></span>
+        <div class="status-info">
+          <span class="status-code">ONLINE // DEV-MODE</span>
+          <span class="status-meta">SYSTEM V2.6 &bull; 60FPS</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Mobile Floating Toggle Button for Vertical Navbar -->
+  <button 
+    type="button" 
+    class="sidebar-mobile-toggle" 
+    id="sidebar-mobile-toggle" 
+    aria-label="Open vertical sidebar navigation" 
+    aria-controls="sidebar-nav" 
+    aria-expanded="false"
+  >
+    <span class="toggle-bar"></span>
+    <span class="toggle-bar"></span>
+    <span class="toggle-bar"></span>
+  </button>
+
+  <!-- Mobile Backdrop Overlay -->
+  <div class="sidebar-backdrop" id="sidebar-backdrop" aria-hidden="true"></div>
+
+  <!-- Main Layout Wrapper (Offset on desktop for left vertical navbar) -->
+  <div class="site-main-layout">
+
+    <!-- ======================================================== -->
+    <!-- HEADER & NAVIGATION                                      -->
+    <!-- ======================================================== -->
+    <header class="site-header" id="site-header">
+      <div class="container header-container">
+        <!-- Brand Logo / Identity -->
+        <a href="#hero" class="brand-logo" aria-label="Portfolio Home">
+          <span class="logo-bracket">&lt;</span><span class="logo-name">Amulya</span><span class="logo-slash">/&gt;</span>
+        </a>
+
+      <!-- Primary Navigation -->
+      <nav class="main-nav" id="main-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#timeline" class="nav-link">Timeline</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Items: Theme Toggle & Resume CTA -->
+      <div class="header-actions">
+        
+        <!-- ==================================================== -->
+        <!-- PLACEHOLDER: NIGHT MODE TOGGLE                       -->
+        <!-- Description: Button that toggles between dark/light  -->
+        <!-- modes with icon states and accessible attributes.     -->
+        <!-- ==================================================== -->
+        <div class="theme-toggle-container" id="theme-toggle-wrapper">
+          <button 
+            type="button" 
+            id="theme-toggle" 
+            class="theme-toggle-btn" 
+            aria-label="Toggle night mode" 
+            aria-pressed="true"
+            title="Switch theme"
+          >
+            <!-- Sun Icon (shown in dark mode to switch to light) -->
+            <svg class="theme-icon icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <!-- Moon Icon (shown in light mode to switch to dark) -->
+            <svg class="theme-icon icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <span class="sr-only">Toggle Dark/Light Mode</span>
+          </button>
+        </div>
+        <!-- End Night Mode Toggle Placeholder -->
+
+        <!-- Resume CTA Link -->
+        <a href="#contact" class="btn btn-sm btn-outline">Let's Talk</a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================================================== -->
+  <!-- MAIN CONTENT AREA                                        -->
+  <!-- ======================================================== -->
+  <main id="main-content">
+
+    <!-- ====================================================== -->
+    <!-- SECTION 1: HERO SECTION (ANIME AESTHETIC)              -->
+    <!-- Description: Anime-themed introductory banner with     -->
+    <!-- Makoto Shinkai scenic background image, floating       -->
+    <!-- sakura blossoms, welcoming title, brief tagline,       -->
+    <!-- interactive night mode detection toggle & HUD stats.   -->
+    <!-- ====================================================== -->
+    <section class="hero-section anime-hero" id="hero">
+      
+      <!-- Anime Aesthetic: Floating Sakura Petals -->
+      <div class="sakura-container" aria-hidden="true">
+        <span class="petal petal-1"></span>
+        <span class="petal petal-2"></span>
+        <span class="petal petal-3"></span>
+        <span class="petal petal-4"></span>
+        <span class="petal petal-5"></span>
+        <span class="petal petal-6"></span>
+        <span class="petal petal-7"></span>
+        <span class="petal petal-8"></span>
+        <span class="petal petal-9"></span>
+        <span class="petal petal-10"></span>
+      </div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          
+          <!-- Anime Kanji & Status Badge -->
+          <div class="anime-pill-badge" role="status">
+            <span class="badge-kanji">ようこそ</span>
+            <span class="badge-sep">✦</span>
+            <span class="badge-label">WELCOME TO MY DIGITAL REALM</span>
+          </div>
+
+          <!-- Welcoming Hero Title -->
+          <h1 class="hero-title">
+            Welcome! I'm <span class="anime-gradient-text">Amulya</span>.
+            <span class="hero-title-sub">Software Engineer &amp; System Architect</span>
+          </h1>
+
+          <!-- Brief Tagline -->
+          <p class="hero-tagline">
+            "Transforming complex architectures into seamless digital reality. Bridging anime-inspired imagination with scalable backend systems, high-velocity APIs, and responsive human interfaces."
+          </p>
+
+          <!-- ==================================================== -->
+          <!-- NIGHT MODE TOGGLE WIDGET (CSS MEDIA QUERY DETECTED) -->
+          <!-- Description: Detects user's default browser theme    -->
+          <!-- via CSS prefers-color-scheme & provides manual toggle -->
+          <!-- ==================================================== -->
+          <div class="hero-theme-widget" id="hero-theme-widget">
+            <div class="theme-widget-info">
+              <span class="theme-pulse-dot" aria-hidden="true"></span>
+              <span class="theme-info-text">
+                Browser Theme: <strong id="current-theme-name">Detecting...</strong>
+              </span>
+            </div>
+            <div class="hero-toggle-actions">
+              <button 
+                type="button" 
+                class="anime-toggle-pill" 
+                id="hero-theme-toggle" 
+                aria-label="Toggle Night and Day mode"
+                title="Switch between Night and Day mode"
+              >
+                <span class="toggle-mode-label mode-day" aria-hidden="true">☀️ Day</span>
+                <span class="toggle-mode-thumb" aria-hidden="true"></span>
+                <span class="toggle-mode-label mode-night" aria-hidden="true">🌙 Night</span>
+              </button>
+              <button 
+                type="button" 
+                class="btn-reset-theme" 
+                id="btn-reset-theme" 
+                title="Sync back with your browser's default OS theme"
+              >
+                Auto-Sync OS
+              </button>
+            </div>
+          </div>
+          <!-- End Night Mode Widget Placeholder -->
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary anime-btn-glow">
+              <span>Explore My Work</span>
+              <span class="btn-sparkle" aria-hidden="true">✦</span>
+            </a>
+            <a href="#contact" class="btn btn-secondary anime-btn-glass">Get in Touch</a>
+          </div>
+
+          <!-- Quick Social Links with Anime Hover Effects -->
+          <div class="social-links" aria-label="Social media profiles">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub profile">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn profile">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter / X profile">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Visual: Anime Cyber-HUD Character Card -->
+        <div class="hero-visual">
+          <div class="anime-hud-card">
+            <div class="hud-card-header">
+              <div class="hud-lights">
+                <span class="hud-light red"></span>
+                <span class="hud-light yellow"></span>
+                <span class="hud-light green"></span>
+              </div>
+              <span class="hud-title">SYSTEM://DEV_STATS.SH</span>
+              <span class="hud-status-badge">ONLINE</span>
+            </div>
+            
+            <div class="hud-card-body">
+              <!-- Character Profile Header -->
+              <div class="hud-profile-box">
+                <div class="hud-avatar">
+                  <span class="hud-avatar-icon">⚡</span>
+                  <div class="avatar-ring"></div>
+                </div>
+                <div class="hud-meta">
+                  <h3 class="hud-name">Amulya</h3>
+                  <p class="hud-class">Class: <span class="highlight-text">Full-Stack Architect</span> (Lv. 99)</p>
+                </div>
+              </div>
+
+              <!-- Power / Skill Bars -->
+              <div class="hud-stat-bars">
+                <div class="hud-stat-item">
+                  <div class="stat-info">
+                    <span>Clean Code &amp; Architecture (Go / TS)</span>
+                    <span class="stat-val">98%</span>
+                  </div>
+                  <div class="stat-bar-track">
+                    <div class="stat-bar-fill fill-pink" style="width: 98%;"></div>
+                  </div>
+                </div>
+                
+                <div class="hud-stat-item">
+                  <div class="stat-info">
+                    <span>Distributed Systems &amp; DBs</span>
+                    <span class="stat-val">94%</span>
+                  </div>
+                  <div class="stat-bar-track">
+                    <div class="stat-bar-fill fill-purple" style="width: 94%;"></div>
+                  </div>
+                </div>
+
+                <div class="hud-stat-item">
+                  <div class="stat-info">
+                    <span>UI/UX &amp; Anime Aesthetics</span>
+                    <span class="stat-val">100%</span>
+                  </div>
+                  <div class="stat-bar-track">
+                    <div class="stat-bar-fill fill-cyan" style="width: 100%;"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Terminal Quote Box -->
+              <div class="hud-quote-box">
+                <span class="quote-prefix">&gt;</span>
+                <p class="quote-text">
+                  <code>"Building software that feels like magic and scales like titans."</code>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Hero Section -->
+
+    <!-- ====================================================== -->
+    <!-- SECTION 2: ABOUT ME SECTION                             -->
+    <!-- Description: Profile portrait, short engineer bio,      -->
+    <!-- career milestones, and personal creative interests.     -->
+    <!-- ====================================================== -->
+    <section class="about-section" id="about">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <header class="section-header">
+          <span class="section-tag">// 01. about me &bull; 自己紹介</span>
+          <h2 class="section-title">Behind the Code</h2>
+          <p class="section-description">
+            A software engineer crafting scalable architectures with clean logic, user empathy, and a love for anime aesthetics.
+          </p>
+        </header>
+
+        <div class="about-content-layout">
+          
+          <!-- Column 1: Profile Image Showcase & Quick Meta -->
+          <div class="about-profile-card">
+            
+            <!-- Portrait Container with Anime Frame & Sakura Accent -->
+            <div class="profile-frame-wrapper">
+              <div class="profile-frame" id="profile-frame">
+                <img 
+                  src="WhatsApp Image 2026-10-07 at 10.17.06 AM.jpeg" 
+                  alt="Profile of Amulya - Software Engineer" 
+                  id="about-profile-img" 
+                  class="profile-img"
+                  loading="lazy"
+                >
+                <div class="profile-ambient-glow" aria-hidden="true"></div>
+                <div class="profile-sakura-corner" aria-hidden="true">🌸</div>
+              </div>
+
+              <!-- Interactive Avatar Mode Switcher (Photo <-> Anime) -->
+              <div class="avatar-mode-switch" aria-label="Avatar display mode switcher">
+                <button 
+                  type="button" 
+                  class="avatar-switch-btn active" 
+                  id="btn-photo-mode" 
+                  data-img="WhatsApp Image 2026-10-07 at 10.17.06 AM.jpeg"
+                  aria-pressed="true"
+                >
+                  <span class="switch-icon">📸</span>
+                  <span>Photo</span>
+                </button>
+                <button 
+                  type="button" 
+                  class="avatar-switch-btn" 
+                  id="btn-anime-mode" 
+                  data-img="profile-anime.jpg"
+                  aria-pressed="false"
+                >
+                  <span class="switch-icon">🌸</span>
+                  <span>Anime Version</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Minimalist Quick Facts Box -->
+            <div class="profile-quick-facts">
+              <div class="fact-item">
+                <span class="fact-icon">💼</span>
+                <div class="fact-meta">
+                  <span class="fact-label">Role</span>
+                  <strong class="fact-value">Software Engineer</strong>
+                </div>
+              </div>
+              <div class="fact-item">
+                <span class="fact-icon">📍</span>
+                <div class="fact-meta">
+                  <span class="fact-label">Location</span>
+                  <strong class="fact-value">India (Open to Remote)</strong>
+                </div>
+              </div>
+              <div class="fact-item">
+                <span class="fact-icon">🌱</span>
+                <div class="fact-meta">
+                  <span class="fact-label">Focus</span>
+                  <strong class="fact-value">Full-Stack &amp; Scalable Systems</strong>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Column 2: Bio, Career Highlights, and Personal Interests -->
+          <article class="about-narrative">
+            
+            <!-- Short Professional Bio -->
+            <div class="bio-text-block">
+              <h3 class="bio-greeting">
+                Hello, I'm <span class="anime-gradient-text">Amulya</span>.
+              </h3>
+              <p class="bio-paragraph">
+                I am a software engineer dedicated to building high-performance web systems and intuitive digital products. My engineering philosophy blends clean code discipline with modern aesthetics — transforming intricate architectural challenges into seamless, joyful user experiences.
+              </p>
+              <p class="bio-paragraph">
+                From designing distributed backend microservices and indexing high-throughput databases to crafting 60fps responsive interfaces, I focus on system reliability, maintainability, and sub-second latencies.
+              </p>
+            </div>
+
+            <!-- Career Highlights (Minimalist Card Deck) -->
+            <div class="about-highlights-deck">
+              <h4 class="deck-title">// Career Highlights</h4>
+              
+              <div class="highlight-cards-grid">
+                
+                <div class="mini-highlight-card">
+                  <div class="card-icon-box">🚀</div>
+                  <div class="card-content">
+                    <h5 class="card-title">Full-Stack Architecture</h5>
+                    <p class="card-desc">
+                      Engineered microservices, robust REST/GraphQL APIs, and scalable PostgreSQL/Redis schemas capable of handling heavy concurrent traffic.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="mini-highlight-card">
+                  <div class="card-icon-box">⚡</div>
+                  <div class="card-content">
+                    <h5 class="card-title">Performance &amp; Frontend</h5>
+                    <p class="card-desc">
+                      Built reactive client applications with TypeScript and modern frameworks, prioritizing web accessibility (a11y) and sub-second load times.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="mini-highlight-card">
+                  <div class="card-icon-box">🛡️</div>
+                  <div class="card-content">
+                    <h5 class="card-title">Reliability &amp; DevOps</h5>
+                    <p class="card-desc">
+                      Implemented automated CI/CD deployment pipelines, comprehensive unit/integration test coverage, and Dockerized development environments.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Personal Interests (Anime & Life Beyond the Terminal) -->
+            <div class="about-interests-box">
+              <h4 class="deck-title">// Beyond the Code &bull; Personal Interests</h4>
+              <p class="interests-intro">
+                When I step away from the keyboard and terminal, you'll usually find me:
+              </p>
+              
+              <ul class="interests-pill-list" role="list">
+                <li class="interest-pill">
+                  <span class="pill-emoji">🌸</span>
+                  <span class="pill-text"><strong>Anime Aesthetics:</strong> Inspired by Makoto Shinkai's sky visuals &amp; Studio Ghibli storytelling</span>
+                </li>
+                <li class="interest-pill">
+                  <span class="pill-emoji">☕</span>
+                  <span class="pill-text"><strong>Specialty Coffee:</strong> Brewing pour-overs while reading engineering whitepapers</span>
+                </li>
+                <li class="interest-pill">
+                  <span class="pill-emoji">🧩</span>
+                  <span class="pill-text"><strong>Algorithmic Puzzles:</strong> Exploring graph algorithms and competitive code challenges</span>
+                </li>
+                <li class="interest-pill">
+                  <span class="pill-emoji">🎧</span>
+                  <span class="pill-text"><strong>Lo-Fi &amp; Soundtracks:</strong> Relaxing with synthwave and ambient lo-fi during deep work</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- About Section CTA Buttons -->
+            <div class="about-cta-actions">
+              <a href="#contact" class="btn btn-primary anime-btn-glow">
+                <span>Start a Conversation</span>
+                <span class="btn-sparkle" aria-hidden="true">✦</span>
+              </a>
+              <a href="#projects" class="btn btn-secondary anime-btn-glass">
+                <span>Explore Projects</span>
+              </a>
+            </div>
+
+          </article>
+
+        </div>
+      </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- ====================================================== -->
+    <!-- SECTION 3: SKILLS SECTION (ANIME AESTHETIC)             -->
+    <!-- Description: Highlights core competencies, focusing on   -->
+    <!-- Java, C Programming, and Python with neon progress bars, -->
+    <!-- category filter tabs, HUD gauges, and styled tool lists.  -->
+    <!-- ====================================================== -->
+    <section class="skills-section" id="skills">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <header class="section-header">
+          <span class="section-tag">// 02. power levels &amp; competencies &bull; スキル</span>
+          <h2 class="section-title">Technical Arsenal &amp; Skills</h2>
+          <p class="section-description">
+            A comprehensive breakdown of core programming proficiencies, backend frameworks, developer utilities, and computer science foundations.
+          </p>
+        </header>
+
+        <!-- Interactive Skill Category Filter Pills -->
+        <div class="skills-filter-nav" aria-label="Skill category filter">
+          <button type="button" class="skill-filter-btn active" data-filter="all">All Competencies</button>
+          <button type="button" class="skill-filter-btn" data-filter="core-lang">Core Languages</button>
+          <button type="button" class="skill-filter-btn" data-filter="frameworks">Frameworks &amp; Web</button>
+          <button type="button" class="skill-filter-btn" data-filter="tools">Developer Tools</button>
+          <button type="button" class="skill-filter-btn" data-filter="cs-core">CS Fundamentals</button>
+        </div>
+
+        <!-- ==================================================== -->
+        <!-- PART A: CORE FEATURED LANGUAGES (JAVA, C, PYTHON)    -->
+        <!-- High-impact power gauge cards with glowing progress  -->
+        <!-- bars, Japanese badges, and key architectural traits. -->
+        <!-- ==================================================== -->
+        <div class="skills-showcase-grid" id="skills-grid-container">
+
+          <!-- -------------------------------------------------- -->
+          <!-- SKILL 1: JAVA                                      -->
+          <!-- Represents: Enterprise application development,    -->
+          <!-- Object-Oriented Programming (OOP) paradigms, JVM   -->
+          <!-- memory architecture, and robust multithreading.    -->
+          <!-- -------------------------------------------------- -->
+          <article class="skill-featured-card skill-card-java" data-category="core-lang">
+            <div class="skill-card-top">
+              <div class="skill-icon-badge icon-java">
+                <span class="skill-icon-emoji" aria-hidden="true">☕</span>
+              </div>
+              <div class="skill-meta-info">
+                <div class="skill-badge-row">
+                  <span class="skill-kanji-tag">オブジェクト指向 // OOP</span>
+                  <span class="skill-level-badge level-gold">Lv. 95 &bull; Expert</span>
+                </div>
+                <h3 class="skill-name">Java</h3>
+              </div>
+            </div>
+
+            <p class="skill-description">
+              Core language for building robust, scalable enterprise systems and server-side applications. Deeply grounded in Object-Oriented Architecture, design patterns, and JVM efficiency.
+            </p>
+
+            <!-- Java Proficiency Progress Bar -->
+            <div class="skill-meter-box">
+              <div class="meter-labels">
+                <span class="meter-title">Mastery Level</span>
+                <span class="meter-percent">95%</span>
+              </div>
+              <div class="meter-track" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="Java proficiency 95%">
+                <div class="meter-fill fill-java" style="--target-width: 95%; width: 95%;">
+                  <span class="meter-shimmer" aria-hidden="true"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Specific Competency Sub-Tags for Java -->
+            <ul class="skill-subtag-list" aria-label="Java technical competencies">
+              <li class="subtag-pill">OOP &amp; SOLID</li>
+              <li class="subtag-pill">Spring Boot</li>
+              <li class="subtag-pill">Collections API</li>
+              <li class="subtag-pill">Multithreading</li>
+              <li class="subtag-pill">JDBC &amp; JPA</li>
+            </ul>
+          </article>
+
+          <!-- -------------------------------------------------- -->
+          <!-- SKILL 2: C PROGRAMMING                             -->
+          <!-- Represents: Low-level systems engineering, pointers -->
+          <!-- dynamic memory allocation (malloc/free), hardware-  -->
+          <!-- close computational speed, and data structures.     -->
+          <!-- -------------------------------------------------- -->
+          <article class="skill-featured-card skill-card-c" data-category="core-lang">
+            <div class="skill-card-top">
+              <div class="skill-icon-badge icon-c">
+                <span class="skill-icon-emoji" aria-hidden="true">⚙️</span>
+              </div>
+              <div class="skill-meta-info">
+                <div class="skill-badge-row">
+                  <span class="skill-kanji-tag">システム基盤 // Low-Level</span>
+                  <span class="skill-level-badge level-cyan">Lv. 90 &bull; Advanced</span>
+                </div>
+                <h3 class="skill-name">C Programming</h3>
+              </div>
+            </div>
+
+            <p class="skill-description">
+              Foundation of high-performance computation. Proficient in manual memory management, pointer arithmetic, system calls, and constructing efficient algorithms from first principles.
+            </p>
+
+            <!-- C Programming Proficiency Progress Bar -->
+            <div class="skill-meter-box">
+              <div class="meter-labels">
+                <span class="meter-title">Mastery Level</span>
+                <span class="meter-percent">90%</span>
+              </div>
+              <div class="meter-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="C Programming proficiency 90%">
+                <div class="meter-fill fill-c" style="--target-width: 90%; width: 90%;">
+                  <span class="meter-shimmer" aria-hidden="true"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Specific Competency Sub-Tags for C -->
+            <ul class="skill-subtag-list" aria-label="C technical competencies">
+              <li class="subtag-pill">Pointers &amp; Memory</li>
+              <li class="subtag-pill">Dynamic Allocation</li>
+              <li class="subtag-pill">Data Structures in C</li>
+              <li class="subtag-pill">POSIX / Linux Calls</li>
+              <li class="subtag-pill">File I/O</li>
+            </ul>
+          </article>
+
+          <!-- -------------------------------------------------- -->
+          <!-- SKILL 3: PYTHON                                    -->
+          <!-- Represents: Rapid development, scripting automation,-->
+          <!-- algorithmic problem solving, RESTful microservices, -->
+          <!-- and data-centric processing.                        -->
+          <!-- -------------------------------------------------- -->
+          <article class="skill-featured-card skill-card-python" data-category="core-lang">
+            <div class="skill-card-top">
+              <div class="skill-icon-badge icon-python">
+                <span class="skill-icon-emoji" aria-hidden="true">🐍</span>
+              </div>
+              <div class="skill-meta-info">
+                <div class="skill-badge-row">
+                  <span class="skill-kanji-tag">自動化とスクリプト // Pythonic</span>
+                  <span class="skill-level-badge level-purple">Lv. 92 &bull; Advanced</span>
+                </div>
+                <h3 class="skill-name">Python</h3>
+              </div>
+            </div>
+
+            <p class="skill-description">
+              Go-to language for rapid prototyping, automated workflows, algorithmic problem-solving, and building high-velocity backend APIs with clean, expressive syntax.
+            </p>
+
+            <!-- Python Proficiency Progress Bar -->
+            <div class="skill-meter-box">
+              <div class="meter-labels">
+                <span class="meter-title">Mastery Level</span>
+                <span class="meter-percent">92%</span>
+              </div>
+              <div class="meter-track" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" aria-label="Python proficiency 92%">
+                <div class="meter-fill fill-python" style="--target-width: 92%; width: 92%;">
+                  <span class="meter-shimmer" aria-hidden="true"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Specific Competency Sub-Tags for Python -->
+            <ul class="skill-subtag-list" aria-label="Python technical competencies">
+              <li class="subtag-pill">Algorithms &amp; Scripts</li>
+              <li class="subtag-pill">FastAPI &amp; Flask</li>
+              <li class="subtag-pill">Automation Workflows</li>
+              <li class="subtag-pill">Data Structures</li>
+              <li class="subtag-pill">Object-Oriented Python</li>
+            </ul>
+          </article>
+
+        </div>
+        <!-- End Featured Core Languages -->
+
+        <!-- ==================================================== -->
+        <!-- PART B: FRAMEWORKS, TOOLS & CS FUNDAMENTALS GRID     -->
+        <!-- Structured grid cards with styled lists & micro-bars -->
+        <!-- ==================================================== -->
+        <div class="skills-categories-grid">
+
+          <!-- -------------------------------------------------- -->
+          <!-- CATEGORY 1: FRAMEWORKS & LIBRARIES                 -->
+          <!-- Represents: Enterprise web frameworks, reactive    -->
+          <!-- UI components, and API service scaffolding.        -->
+          <!-- -------------------------------------------------- -->
+          <div class="skill-group-card" data-category="frameworks">
+            <div class="group-header">
+              <span class="group-icon">🚀</span>
+              <div>
+                <h4 class="group-title">Frameworks &amp; Web</h4>
+                <span class="group-kanji">フレームワーク</span>
+              </div>
+            </div>
+            
+            <ul class="skill-meter-list">
+              <!-- Spring Boot -->
+              <li class="skill-meter-item">
+                <div class="item-head">
+                  <span class="item-name">Spring Boot (Java)</span>
+                  <span class="item-val">88%</span>
+                </div>
+                <div class="mini-bar-track">
+                  <div class="mini-bar-fill fill-gold" data-width="88%" style="width: 0%;"></div>
+                </div>
+              </li>
+
+              <!-- Django & Flask -->
+              <li class="skill-meter-item">
+                <div class="item-head">
+                  <span class="item-name">Flask / FastAPI (Python)</span>
+                  <span class="item-val">90%</span>
+                </div>
+                <div class="mini-bar-track">
+                  <div class="mini-bar-fill fill-purple" data-width="90%" style="width: 0%;"></div>
+                </div>
+              </li>
+
+              <!-- React & JavaScript -->
+              <li class="skill-meter-item">
+                <div class="item-head">
+                  <span class="item-name">React.js &amp; JavaScript (ES6+)</span>
+                  <span class="item-val">86%</span>
+                </div>
+                <div class="mini-bar-track">
+                  <div class="mini-bar-fill fill-cyan" data-width="86%" style="width: 0%;"></div>
+                </div>
+              </li>
+
+              <!-- Node.js -->
+              <li class="skill-meter-item">
+                <div class="item-head">
+                  <span class="item-name">Node.js / Express</span>
+                  <span class="item-val">82%</span>
+                </div>
+                <div class="mini-bar-track">
+                  <div class="mini-bar-fill fill-pink" data-width="82%" style="width: 0%;"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- -------------------------------------------------- -->
+          <!-- CATEGORY 2: DEVELOPER TOOLS & PLATFORMS            -->
+          <!-- Represents: Day-to-day engineering workflows,      -->
+          <!-- version control, database engines, and environments.-->
+          <!-- -------------------------------------------------- -->
+          <div class="skill-group-card" data-category="tools">
+            <div class="group-header">
+              <span class="group-icon">🛠️</span>
+              <div>
+                <h4 class="group-title">Developer Tools</h4>
+                <span class="group-kanji">ツール &bull; 環境</span>
+              </div>
+            </div>
+
+            <ul class="skill-badge-matrix" role="list">
+              <!-- Git / GitHub -->
+              <li class="tool-badge-item">
+                <span class="tool-icon">🐙</span>
+                <div class="tool-details">
+                  <strong>Git &amp; GitHub</strong>
+                  <span class="tool-caption">Branching, PRs, CI/CD Actions</span>
+                </div>
+              </li>
+
+              <!-- Linux & Shell -->
+              <li class="tool-badge-item">
+                <span class="tool-icon">🐧</span>
+                <div class="tool-details">
+                  <strong>Linux &amp; Bash</strong>
+                  <span class="tool-caption">POSIX Terminal, Shell Scripts</span>
+                </div>
+              </li>
+
+              <!-- SQL Databases -->
+              <li class="tool-badge-item">
+                <span class="tool-icon">🗄️</span>
+                <div class="tool-details">
+                  <strong>MySQL &amp; PostgreSQL</strong>
+                  <span class="tool-caption">Schema Design, Indexing, ACID</span>
+                </div>
+              </li>
+
+              <!-- Docker -->
+              <li class="tool-badge-item">
+                <span class="tool-icon">🐳</span>
+                <div class="tool-details">
+                  <strong>Docker</strong>
+                  <span class="tool-caption">Containerization &amp; Isolated Envs</span>
+                </div>
+              </li>
+
+              <!-- IDEs & Debugging -->
+              <li class="tool-badge-item">
+                <span class="tool-icon">💻</span>
+                <div class="tool-details">
+                  <strong>VS Code &amp; IntelliJ IDEA</strong>
+                  <span class="tool-caption">Profilers, Debugging, Linters</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- -------------------------------------------------- -->
+          <!-- CATEGORY 3: COMPUTER SCIENCE FOUNDATIONS           -->
+          <!-- Represents: Algorithmic problem-solving, data       -->
+          <!-- structure mechanics, system design, and patterns.  -->
+          <!-- -------------------------------------------------- -->
+          <div class="skill-group-card" data-category="cs-core">
+            <div class="group-header">
+              <span class="group-icon">🧠</span>
+              <div>
+                <h4 class="group-title">CS Fundamentals</h4>
+                <span class="group-kanji">コンピュータサイエンス</span>
+              </div>
+            </div>
+
+            <ul class="cs-checklist" role="list">
+              <!-- Data Structures & Algorithms -->
+              <li class="cs-check-item">
+                <span class="check-bullet">✦</span>
+                <div>
+                  <strong>Data Structures &amp; Algorithms</strong>
+                  <p>Arrays, Linked Lists, Trees, Graphs, Hash Tables, Sorting, Binary Search, Big-O analysis.</p>
+                </div>
+              </li>
+
+              <!-- Object-Oriented Design -->
+              <li class="cs-check-item">
+                <span class="check-bullet">✦</span>
+                <div>
+                  <strong>Object-Oriented Design (OOD)</strong>
+                  <p>Encapsulation, Inheritance, Polymorphism, Abstraction, SOLID principles, and Factory/Singleton patterns.</p>
+                </div>
+              </li>
+
+              <!-- Database Management -->
+              <li class="cs-check-item">
+                <span class="check-bullet">✦</span>
+                <div>
+                  <strong>Database Systems (DBMS)</strong>
+                  <p>Relational normalization (1NF-BCNF), transactions, query execution planning, and caching.</p>
+                </div>
+              </li>
+
+              <!-- Operating Systems & Networks -->
+              <li class="cs-check-item">
+                <span class="check-bullet">✦</span>
+                <div>
+                  <strong>OS &amp; Networking Principles</strong>
+                  <p>Processes vs. Threads, Concurrency, Deadlocks, Memory paging, TCP/IP stack, and HTTP/REST protocols.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <!-- End Categories Grid -->
+
+      </div>
+    </section>
+    <!-- End Skills Section -->
+
+    <!-- ====================================================== -->
+    <!-- SECTION 4: TIMELINE — EDUCATION & PROJECTS            -->
+    <!-- Amulya's real academic journey + project milestones    -->
+    <!-- Alternating left/right layout with category badges,    -->
+    <!-- neon connector line, hover glow cards, and tag pills.  -->
+    <!-- ====================================================== -->
+    <section class="timeline-section" id="timeline">
+      <div class="container">
+
+        <!-- Section Header -->
+        <header class="section-header">
+          <span class="section-tag">// 03. journey &bull; 学習の旅</span>
+          <h2 class="section-title">Education &amp; Milestones</h2>
+          <p class="section-description">
+            A chronological story — from school foundations to university and hands-on engineering projects.
+          </p>
+        </header>
+
+        <!-- Central connector line runs through .tl-track -->
+        <div class="tl-track">
+
+          <!-- ============================================================ -->
+          <!-- MILESTONE 1 — 10th Standard (Foundation)                     -->
+          <!-- Represents the academic foundation at secondary school level. -->
+          <!-- ============================================================ -->
+          <article class="tl-item tl-left" data-year="2020">
+            <!-- Dot on the centre line — pulsing neon ring -->
+            <div class="tl-dot tl-dot-edu" aria-hidden="true">🏫</div>
+
+            <!-- Card: rounds box with hover glow transition -->
+            <div class="tl-card tl-card-edu">
+              <!-- Category badge: Education vs Project -->
+              <span class="tl-badge badge-edu">📚 Education</span>
+
+              <div class="tl-card-body">
+                <div class="tl-year-tag">2020</div>
+                <h3 class="tl-title">Secondary School Certificate (SSLC)</h3>
+                <!-- Institution name -->
+                <p class="tl-institution">
+                  <span class="tl-inst-icon">🏛️</span>
+                  Poorna Prajna Education Centre
+                </p>
+                <!-- Brief description of the milestone -->
+                <p class="tl-desc">
+                  Completed 10th standard with a strong academic foundation in Mathematics, Science, and English. Developed core analytical and problem-solving skills that seeded a passion for technology.
+                </p>
+                <!-- Relevant subject/achievement tags -->
+                <ul class="tl-tags">
+                  <li>Mathematics</li>
+                  <li>Science</li>
+                  <li>English</li>
+                  <li>SSLC Board</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- ============================================================ -->
+          <!-- MILESTONE 2 — 12th Standard / PUC (Pre-University)          -->
+          <!-- Represents the transition to science stream and higher study. -->
+          <!-- ============================================================ -->
+          <article class="tl-item tl-right" data-year="2022">
+            <div class="tl-dot tl-dot-edu" aria-hidden="true">🎓</div>
+
+            <div class="tl-card tl-card-edu">
+              <span class="tl-badge badge-edu">📚 Education</span>
+
+              <div class="tl-card-body">
+                <div class="tl-year-tag">2022</div>
+                <h3 class="tl-title">Pre-University Course (PUC) — Science Stream</h3>
+                <p class="tl-institution">
+                  <span class="tl-inst-icon">🏛️</span>
+                  Alvas Pre University College
+                </p>
+                <p class="tl-desc">
+                  Completed 12th standard (PCMB) with distinction, specialising in Physics, Chemistry, Mathematics, and Biology. Built rigorous logical thinking and entered engineering entrance examinations.
+                </p>
+                <ul class="tl-tags">
+                  <li>Physics</li>
+                  <li>Chemistry</li>
+                  <li>Mathematics</li>
+                  <li>PCMB Stream</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- ============================================================ -->
+          <!-- MILESTONE 3 — Bachelor of Engineering (Current)             -->
+          <!-- Represents the ongoing undergraduate engineering degree.      -->
+          <!-- ============================================================ -->
+          <article class="tl-item tl-left" data-year="2026">
+            <!-- "Present" dot glows brighter to indicate active status -->
+            <div class="tl-dot tl-dot-active" aria-hidden="true">⚙️</div>
+
+            <div class="tl-card tl-card-present">
+              <!-- Active/ongoing badge differentiates from completed entries -->
+              <span class="tl-badge badge-active">🔬 Pursuing</span>
+
+              <div class="tl-card-body">
+                <div class="tl-year-tag tl-year-present">2022 — Present</div>
+                <h3 class="tl-title">Bachelor of Engineering (B.E.) — Computer Science</h3>
+                <p class="tl-institution">
+                  <span class="tl-inst-icon">🏛️</span>
+                  Adichunchanagiri Institute of Technology (AIT)
+                </p>
+                <p class="tl-desc">
+                  Currently pursuing B.E. in Computer Science &amp; Engineering. Coursework covers Data Structures, Algorithms, OOP, DBMS, Operating Systems, Computer Networks, and Software Engineering. Actively building real-world projects.
+                </p>
+                <ul class="tl-tags">
+                  <li>Java &amp; C</li>
+                  <li>Python</li>
+                  <li>DSA</li>
+                  <li>DBMS</li>
+                  <li>Computer Networks</li>
+                  <li>AIT, VTU</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- ============================================================ -->
+          <!-- MILESTONE 4 — PROJECT: Smart Parking System                 -->
+          <!-- IoT / sensor-based project — represents applied engineering.  -->
+          <!-- ============================================================ -->
+          <article class="tl-item tl-right" data-year="2024">
+            <div class="tl-dot tl-dot-project" aria-hidden="true">🅿️</div>
+
+            <div class="tl-card tl-card-project">
+              <span class="tl-badge badge-project">🛠️ Project</span>
+
+              <div class="tl-card-body">
+                <div class="tl-year-tag">2024</div>
+                <h3 class="tl-title">Smart Parking System Using Sensors</h3>
+                <p class="tl-institution">
+                  <span class="tl-inst-icon">🏗️</span>
+                  Engineering Project — AIT
+                </p>
+                <!-- What the project does and why it matters -->
+                <p class="tl-desc">
+                  Designed and built an IoT-based smart parking management system using ultrasonic and IR sensors to detect slot occupancy in real time. System displays live availability on an LCD and a web dashboard, reducing time spent searching for parking by an estimated 60%.
+                </p>
+                <!-- Tech stack used — helps recruiters scan quickly -->
+                <ul class="tl-tags">
+                  <li>Arduino / ESP8266</li>
+                  <li>Ultrasonic Sensors</li>
+                  <li>IR Sensors</li>
+                  <li>C (Embedded)</li>
+                  <li>IoT Dashboard</li>
+                  <li>LCD Display</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- ============================================================ -->
+          <!-- MILESTONE 5 — PROJECT: Building Information Modelling (BIM) -->
+          <!-- Cross-disciplinary project merging civil & software domains.  -->
+          <!-- ============================================================ -->
+          <article class="tl-item tl-left" data-year="2025">
+            <div class="tl-dot tl-dot-project" aria-hidden="true">🏗️</div>
+
+            <div class="tl-card tl-card-project">
+              <span class="tl-badge badge-project">🛠️ Project</span>
+
+              <div class="tl-card-body">
+                <div class="tl-year-tag">2025</div>
+                <h3 class="tl-title">Building Information Modelling (BIM)</h3>
+                <p class="tl-institution">
+                  <span class="tl-inst-icon">🏗️</span>
+                  Engineering Project — AIT
+                </p>
+                <!-- Cross-disciplinary angle makes this stand out -->
+                <p class="tl-desc">
+                  Developed a 3D digital model of a building structure integrating architectural, structural, and MEP (Mechanical, Electrical, Plumbing) data. BIM enables collision detection, cost estimation automation, and lifecycle management — reducing design rework by 40%.
+                </p>
+                <ul class="tl-tags">
+                  <li>BIM Software</li>
+                  <li>3D Modelling</li>
+                  <li>Structural Analysis</li>
+                  <li>Python Automation</li>
+                  <li>MEP Integration</li>
+                  <li>Revit / AutoCAD</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+        </div>
+        <!-- End .tl-track -->
+
+      </div>
+    </section>
+    <!-- End Timeline Section -->
+
+
+    <!-- ====================================================== -->
+    <!-- SECTION 5: PROJECTS SECTION                            -->
+    <!-- Each .proj-thumb card carries data-project="<id>"     -->
+    <!-- that matches a <div id="modal-<id>"> detail panel.    -->
+    <!-- Clicking any thumbnail opens its corresponding modal   -->
+    <!-- via JS (Section 9 in script.js). The modal contains    -->
+    <!-- the full description, feature list, and action links.  -->
+    <!-- ====================================================== -->
+    <section class="projects-section" id="projects">
+      <div class="container">
+
+        <!-- Section Header -->
+        <header class="section-header">
+          <span class="section-tag">// 04. featured works &bull; プロジェクト</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-description">
+            Real-world engineering builds — from IoT sensor systems to 3D digital twins. Click any card to explore the full project details.
+          </p>
+        </header>
+
+        <!-- ============================================================ -->
+        <!-- PROJECT THUMBNAILS GRID                                       -->
+        <!-- Each article.proj-thumb has:                                  -->
+        <!--   data-project="<id>"  → links to modal id="modal-<id>"      -->
+        <!--   .proj-thumb-img      → the clickable visual thumbnail       -->
+        <!--   .proj-overlay        → hover overlay with CTA button        -->
+        <!-- ============================================================ -->
+        <div class="proj-grid">
+
+          <!-- ---------------------------------------------------------- -->
+          <!-- THUMBNAIL 1: Smart Parking System                           -->
+          <!-- data-project="parking" links this card to                   -->
+          <!-- id="modal-parking" — the detail modal below.               -->
+          <!-- ---------------------------------------------------------- -->
+          <article class="proj-thumb" data-project="parking"
+                   role="button" tabindex="0"
+                   aria-haspopup="dialog"
+                   aria-controls="modal-parking"
+                   aria-label="View details: Smart Parking System Using Sensors">
+
+            <!-- Thumbnail image — clicking anywhere on the card opens the modal -->
+            <div class="proj-thumb-img-wrap">
+              <img
+                src="project-parking.jpg"
+                alt="Smart Parking System sensor grid visualization"
+                class="proj-thumb-img"
+                loading="lazy"
+              />
+              <!-- Hover overlay: darkens image + shows CTA text -->
+              <div class="proj-overlay" aria-hidden="true">
+                <span class="proj-overlay-icon">🔍</span>
+                <span class="proj-overlay-label">View Details</span>
+              </div>
+              <!-- Category badge anchored to the top-left of the thumbnail -->
+              <span class="proj-cat-badge badge-iot">🤖 IoT / Embedded</span>
+            </div>
+
+            <!-- Card info below the thumbnail image -->
+            <div class="proj-info">
+              <div class="proj-meta-row">
+                <span class="proj-year">2024</span>
+                <!-- Status pill: completed vs ongoing -->
+                <span class="proj-status status-done">✓ Completed</span>
+              </div>
+              <h3 class="proj-title">Smart Parking System Using Sensors</h3>
+              <p class="proj-snippet">
+                IoT-based parking occupancy detection using ultrasonic &amp; IR sensors with real-time LCD and web dashboard output.
+              </p>
+              <!-- Tech stack pills below snippet -->
+              <ul class="proj-tech-pills">
+                <li>Arduino / ESP8266</li>
+                <li>C (Embedded)</li>
+                <li>IR &amp; Ultrasonic Sensors</li>
+                <li>IoT Dashboard</li>
+              </ul>
+              <!-- Bottom action row: GitHub link + "Details" CTA -->
+              <div class="proj-action-row">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                   class="proj-gh-link" aria-label="GitHub: Smart Parking System"
+                   onclick="event.stopPropagation()">
+                  <!-- GitHub SVG icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  Source
+                </a>
+                <!-- The "Details →" button opens the modal (handled in JS via the card's click listener) -->
+                <button class="proj-details-btn" type="button" aria-controls="modal-parking">Details →</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- ---------------------------------------------------------- -->
+          <!-- THUMBNAIL 2: Building Information Modelling                 -->
+          <!-- data-project="bim" links this card to id="modal-bim"       -->
+          <!-- ---------------------------------------------------------- -->
+          <article class="proj-thumb" data-project="bim"
+                   role="button" tabindex="0"
+                   aria-haspopup="dialog"
+                   aria-controls="modal-bim"
+                   aria-label="View details: Building Information Modelling">
+
+            <div class="proj-thumb-img-wrap">
+              <img
+                src="project-bim.jpg"
+                alt="Building Information Modelling 3D wireframe visualization"
+                class="proj-thumb-img"
+                loading="lazy"
+              />
+              <div class="proj-overlay" aria-hidden="true">
+                <span class="proj-overlay-icon">🔍</span>
+                <span class="proj-overlay-label">View Details</span>
+              </div>
+              <span class="proj-cat-badge badge-arch">🏗️ Architecture / BIM</span>
+            </div>
+
+            <div class="proj-info">
+              <div class="proj-meta-row">
+                <span class="proj-year">2025</span>
+                <span class="proj-status status-done">✓ Completed</span>
+              </div>
+              <h3 class="proj-title">Building Information Modelling (BIM)</h3>
+              <p class="proj-snippet">
+                3D digital building model integrating architectural, structural, and MEP data for collision detection and lifecycle management.
+              </p>
+              <ul class="proj-tech-pills">
+                <li>BIM / Revit</li>
+                <li>AutoCAD</li>
+                <li>Python Automation</li>
+                <li>MEP Integration</li>
+              </ul>
+              <div class="proj-action-row">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                   class="proj-gh-link" aria-label="GitHub: BIM Project"
+                   onclick="event.stopPropagation()">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  Source
+                </a>
+                <button class="proj-details-btn" type="button" aria-controls="modal-bim">Details →</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+        <!-- End .proj-grid -->
+
+      </div>
+    </section>
+    <!-- End Projects Section -->
+
+    <!-- ============================================================ -->
+    <!-- PROJECT DETAIL MODALS                                         -->
+    <!-- Each modal id="modal-<id>" corresponds to a thumbnail card   -->
+    <!-- with data-project="<id>". JS (Section 9) reads the           -->
+    <!-- data-project attr from the clicked card, then opens the       -->
+    <!-- matching modal by finding #modal-<id> in the DOM.            -->
+    <!-- Pressing Escape or clicking the backdrop also closes it.      -->
+    <!-- ============================================================ -->
+
+    <!-- ---------------------------------------------------------- -->
+    <!-- MODAL: Smart Parking System (id matches data-project="parking") -->
+    <!-- ---------------------------------------------------------- -->
+    <div class="proj-modal-backdrop" id="modal-parking" role="dialog"
+         aria-modal="true" aria-labelledby="modal-parking-title" hidden>
+      <div class="proj-modal-panel">
+
+        <!-- Close button (×) — JS attaches click → closeModal() -->
+        <button class="proj-modal-close" aria-label="Close project detail">✕</button>
+
+        <!-- Modal hero: the same thumbnail image at large size -->
+        <div class="proj-modal-hero">
+          <img src="project-parking.jpg" alt="Smart Parking System visualization" class="proj-modal-hero-img" />
+          <div class="proj-modal-hero-overlay">
+            <span class="proj-cat-badge badge-iot">🤖 IoT / Embedded</span>
+          </div>
+        </div>
+
+        <div class="proj-modal-body">
+          <!-- Year + status row -->
+          <div class="proj-meta-row">
+            <span class="proj-year">2024</span>
+            <span class="proj-status status-done">✓ Completed</span>
+          </div>
+
+          <!-- Project title — referenced by aria-labelledby -->
+          <h2 class="proj-modal-title" id="modal-parking-title">
+            Smart Parking System Using Sensors
+          </h2>
+
+          <p class="proj-modal-institution">🏛️ Engineering Project — Adichunchanagiri Institute of Technology (AIT)</p>
+
+          <!-- Full project description -->
+          <p class="proj-modal-desc">
+            Designed and implemented a real-time IoT-based smart parking management system using ultrasonic and IR sensors mounted at each parking bay. The system continuously polls sensor states via an ESP8266 Wi-Fi module, pushes occupancy data to a web dashboard, and also shows slot status on a 16×2 LCD display.
+          </p>
+
+          <!-- Key features list -->
+          <h4 class="proj-modal-features-title">Key Features &amp; Outcomes</h4>
+          <ul class="proj-modal-features">
+            <li>🟢 Real-time slot occupancy detection (green = free / red = occupied)</li>
+            <li>📡 ESP8266 Wi-Fi module for wireless data transmission</li>
+            <li>🖥️ 16×2 LCD display for on-site status readout</li>
+            <li>📊 Web dashboard showing live availability count per zone</li>
+            <li>⏱️ ~60% reduction in time wasted searching for parking</li>
+            <li>💾 C (Embedded) firmware with interrupt-driven sensor polling</li>
+          </ul>
+
+          <!-- Full tech stack -->
+          <h4 class="proj-modal-features-title">Technology Stack</h4>
+          <ul class="proj-tech-pills proj-modal-pills">
+            <li>Arduino Uno</li>
+            <li>ESP8266 Wi-Fi</li>
+            <li>HC-SR04 Ultrasonic</li>
+            <li>IR Proximity Sensors</li>
+            <li>C (Embedded)</li>
+            <li>LCD 16×2 Display</li>
+            <li>IoT Web Dashboard</li>
+          </ul>
+
+          <!-- CTA buttons -->
+          <div class="proj-modal-actions">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              View on GitHub
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- End modal-parking -->
+
+    <!-- ---------------------------------------------------------- -->
+    <!-- MODAL: BIM (id matches data-project="bim") -->
+    <!-- ---------------------------------------------------------- -->
+    <div class="proj-modal-backdrop" id="modal-bim" role="dialog"
+         aria-modal="true" aria-labelledby="modal-bim-title" hidden>
+      <div class="proj-modal-panel">
+
+        <button class="proj-modal-close" aria-label="Close project detail">✕</button>
+
+        <div class="proj-modal-hero">
+          <img src="project-bim.jpg" alt="Building Information Modelling visualization" class="proj-modal-hero-img" />
+          <div class="proj-modal-hero-overlay">
+            <span class="proj-cat-badge badge-arch">🏗️ Architecture / BIM</span>
+          </div>
+        </div>
+
+        <div class="proj-modal-body">
+          <div class="proj-meta-row">
+            <span class="proj-year">2025</span>
+            <span class="proj-status status-done">✓ Completed</span>
+          </div>
+
+          <h2 class="proj-modal-title" id="modal-bim-title">
+            Building Information Modelling (BIM)
+          </h2>
+
+          <p class="proj-modal-institution">🏛️ Engineering Project — Adichunchanagiri Institute of Technology (AIT)</p>
+
+          <p class="proj-modal-desc">
+            Developed a comprehensive 3D digital building model that unifies architectural layout, structural frame, and MEP (Mechanical, Electrical, Plumbing) systems into a single coordinated data model. The BIM workflow enables automatic clash detection between subsystems, parametric cost estimation, and full lifecycle management from design through demolition.
+          </p>
+
+          <h4 class="proj-modal-features-title">Key Features &amp; Outcomes</h4>
+          <ul class="proj-modal-features">
+            <li>🏛️ 3D integrated model: architecture + structure + MEP in one file</li>
+            <li>⚡ Automated clash detection — identified 40+ design conflicts pre-construction</li>
+            <li>💰 Parametric cost estimation linked to BIM element quantities</li>
+            <li>🔄 Python scripts for automated drawing sheet generation</li>
+            <li>📐 Floor plans, sections, and elevations auto-generated from 3D model</li>
+            <li>📉 ~40% reduction in design rework and revision cycles</li>
+          </ul>
+
+          <h4 class="proj-modal-features-title">Technology Stack</h4>
+          <ul class="proj-tech-pills proj-modal-pills">
+            <li>Autodesk Revit</li>
+            <li>AutoCAD</li>
+            <li>BIM 360</li>
+            <li>Python Automation</li>
+            <li>Navisworks (Clash Detection)</li>
+            <li>MEP Coordination</li>
+            <li>Structural Analysis</li>
+          </ul>
+
+          <div class="proj-modal-actions">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              View on GitHub
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- End modal-bim -->
+
+    <!-- ====================================================== -->
+    <!-- SECTION 5.5: VIDEO SPOTLIGHT                           -->
+    <!-- A responsive YouTube embed framed in an anime HUD      -->
+    <!-- style. The iframe uses aspect-ratio: 16/9 so it scales -->
+    <!-- fluidly on all screen sizes without JS.                -->
+    <!-- To swap the video: replace the 11-char YouTube ID      -->
+    <!-- inside the src attribute (after /embed/).               -->
+    <!-- ====================================================== -->
+    <section class="video-section" id="video-spotlight">
+      <div class="container">
+
+        <!-- Section Header -->
+        <header class="section-header">
+          <span class="section-tag">// 04.5. spotlight &bull; 動画紹介</span>
+          <h2 class="section-title">Portfolio Video Spotlight</h2>
+          <p class="section-description">
+            A short introduction to my engineering journey, projects, and technical interests — in motion.
+          </p>
+        </header>
+
+        <!-- ============================================================ -->
+        <!-- VIDEO HUD FRAME                                               -->
+        <!-- .vid-hud wraps the embed with an anime terminal-style border. -->
+        <!-- .vid-aspect-box enforces 16:9 via aspect-ratio; the iframe   -->
+        <!-- fills 100% width and height of it — no padding hacks needed. -->
+        <!-- ============================================================ -->
+        <div class="vid-hud" role="region" aria-label="Portfolio video spotlight">
+
+          <!-- Decorative HUD top bar -->
+          <div class="vid-hud-bar" aria-hidden="true">
+            <div class="vid-hud-dots">
+              <span class="hud-dot dot-red"></span>
+              <span class="hud-dot dot-yellow"></span>
+              <span class="hud-dot dot-green"></span>
+            </div>
+            <span class="vid-hud-label">▶ PORTFOLIO_INTRO.mp4 &nbsp;|&nbsp; HD 1080p</span>
+            <span class="vid-hud-kanji" aria-hidden="true">動画 // VIDEO</span>
+          </div>
+
+          <!-- 16:9 responsive container — aspect-ratio does the heavy lifting.  -->
+          <!-- The iframe src embeds YouTube with autoplay=0, modestbranding=1,   -->
+          <!-- rel=0 (no related videos from other channels), and color=white.    -->
+          <!-- SWAP VIDEO: replace "dQw4w9WgXcQ" with any 11-char YouTube video ID -->
+          <div class="vid-aspect-box">
+            <iframe
+              id="portfolio-video"
+              class="vid-iframe"
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1&color=white&showinfo=0"
+              title="Amulya's Portfolio Video Spotlight"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+
+          <!-- Decorative HUD bottom status bar -->
+          <div class="vid-hud-footer" aria-hidden="true">
+            <span class="vid-status-dot"></span>
+            <span class="vid-status-text">STREAM ACTIVE &nbsp;// &nbsp;AIT &bull; ADICHUNCHANAGIRI INSTITUTE OF TECHNOLOGY</span>
+            <span class="vid-timestamp" id="vid-timestamp-display">--:--</span>
+          </div>
+
+        </div>
+        <!-- End .vid-hud -->
+
+        <!-- Caption strip below the video frame -->
+        <figure class="vid-caption-strip">
+          <figcaption class="vid-caption">
+            <span class="vid-caption-icon">🎬</span>
+            <div>
+              <strong class="vid-caption-title">About This Video</strong>
+              <p class="vid-caption-text">
+                This clip introduces my engineering journey at AIT — covering my hands-on projects (Smart Parking System &amp; BIM), core skills in Java, C, and Python, and my passion for building technology that solves real-world problems.
+                <br><em class="vid-caption-hint">Tip: Replace the YouTube link above with your own introduction or project demo video.</em>
+              </p>
+            </div>
+          </figcaption>
+        </figure>
+
+      </div>
+    </section>
+    <!-- End Video Spotlight Section -->
+
+    <!-- ====================================================== -->
+    <!-- SECTION 6: TESTIMONIALS SECTION                        -->
+    <!-- Description: Recommendations from engineering leads,    -->
+    <!-- designers, and open-source collaborators.              -->
+    <!-- ====================================================== -->
+
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">// 05. recommendations</span>
+          <h2 class="section-title">Peer &amp; Client Testimonials</h2>
+          <p class="section-description">Endorsements from team leads, architects, and collaborators I've had the privilege of building with.</p>
+        </header>
+
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <article class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar-box">
+                <span class="testimonial-avatar">👨‍💻</span>
+                <div>
+                  <h3 class="testimonial-name">Hiroshi Tanaka</h3>
+                  <span class="testimonial-role">VP of Engineering @ CloudScale</span>
+                </div>
+              </div>
+              <div class="testimonial-rating" aria-label="5 out of 5 stars">★★★★★</div>
+            </div>
+            <p class="testimonial-text">
+              "Alex has an exceptional superpower: taking highly ambiguous distributed system requirements and transforming them into bulletproof, high-throughput Go microservices. An invaluable senior teammate."
+            </p>
+            <div class="testimonial-footer">
+              <span class="badge-verified">✓ Verified Lead</span>
+              <span class="testimonial-date">Project: Synapse DB</span>
+            </div>
+          </article>
+
+          <!-- Testimonial 2 -->
+          <article class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar-box">
+                <span class="testimonial-avatar">👩‍🎨</span>
+                <div>
+                  <h3 class="testimonial-name">Elena Rostova</h3>
+                  <span class="testimonial-role">Staff Product Designer @ Nexus Labs</span>
+                </div>
+              </div>
+              <div class="testimonial-rating" aria-label="5 out of 5 stars">★★★★★</div>
+            </div>
+            <p class="testimonial-text">
+              "Engineers with Alex's deep backend chops rarely care this passionately about sub-60fps fluid UI experiences and accessibility. Working alongside Alex elevates the entire frontend engineering bar."
+            </p>
+            <div class="testimonial-footer">
+              <span class="badge-verified">✓ Verified Peer</span>
+              <span class="testimonial-date">Project: DevPulse UI</span>
+            </div>
+          </article>
+
+          <!-- Testimonial 3 -->
+          <article class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar-box">
+                <span class="testimonial-avatar">⚡</span>
+                <div>
+                  <h3 class="testimonial-name">Marcus Vance</h3>
+                  <span class="testimonial-role">Core Contributor @ StreamSync OSS</span>
+                </div>
+              </div>
+              <div class="testimonial-rating" aria-label="5 out of 5 stars">★★★★★</div>
+            </div>
+            <p class="testimonial-text">
+              "Alex solved a thorny distributed consensus edge-case that had blocked our open-source release for two weeks. Clean code, comprehensive benchmarks, and zero ego. 10/10 recommendation!"
+            </p>
+            <div class="testimonial-footer">
+              <span class="badge-verified">✓ Open Source Collaborator</span>
+              <span class="testimonial-date">Project: Raft Consensus</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- End Testimonials Section -->
+
+    <!-- ====================================================== -->
+    <!-- SECTION 7: CHAT / INTERACTIVE DEV ASSISTANT SECTION    -->
+    <!-- Description: Interactive anime-style cyber chat box    -->
+    <!-- where visitors can chat or ask questions about Alex.   -->
+    <!-- ====================================================== -->
+    <section class="chat-section" id="chat">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">// 06. interactive terminal</span>
+          <h2 class="section-title">Dev Assistant &amp; Terminal Chat</h2>
+          <p class="section-description">Have a quick question? Chat live with Alex's interactive AI terminal assistant for instant details.</p>
+        </header>
+
+        <div class="chat-terminal-container">
+          <!-- Terminal Header -->
+          <div class="chat-terminal-header">
+            <div class="terminal-dots">
+              <span class="t-dot t-red"></span>
+              <span class="t-dot t-yellow"></span>
+              <span class="t-dot t-green"></span>
+            </div>
+            <div class="terminal-title">TERMINAL://ALEX_BOT_V2.6 &bull; INTERACTIVE_SESSION</div>
+            <div class="terminal-badge">READY // 100%</div>
+          </div>
+
+          <!-- Chat Conversation Window -->
+          <div class="chat-messages-area" id="chat-messages" role="log" aria-live="polite">
+            <div class="chat-bubble bot-bubble">
+              <div class="bubble-avatar">🌸</div>
+              <div class="bubble-content">
+                <p><strong>Alex's Assistant:</strong> Konnichiwa! Welcome to Alex's interactive hub. Ask me anything about Alex's tech stack, current availability, notable projects, or anime design influences! You can also click the quick prompt pills below.</p>
+                <time class="bubble-time">Just now</time>
+              </div>
+            </div>
+          </div>
+
+          <!-- Suggested Quick Prompts -->
+          <div class="chat-quick-prompts" aria-label="Suggested questions">
+            <span class="prompts-label">Quick Prompts:</span>
+            <button type="button" class="chat-prompt-chip" data-msg="What is your core tech stack?">⚡ Tech Stack?</button>
+            <button type="button" class="chat-prompt-chip" data-msg="Are you currently open to full-time or contract roles?">💼 Available for hire?</button>
+            <button type="button" class="chat-prompt-chip" data-msg="What are your featured engineering projects?">🚀 Featured Projects?</button>
+            <button type="button" class="chat-prompt-chip" data-msg="What anime inspired this portfolio aesthetic?">🌸 Anime Inspiration?</button>
+          </div>
+
+          <!-- Chat Input Form -->
+          <form class="chat-input-form" id="chat-form">
+            <label for="chat-input-field" class="sr-only">Type a question for Alex</label>
+            <input 
+              type="text" 
+              id="chat-input-field" 
+              class="chat-input-field" 
+              placeholder="Ask a question or type a message..." 
+              autocomplete="off"
+              required
+            >
+            <button type="submit" class="btn btn-primary chat-submit-btn">
+              <span>Send</span>
+              <span class="btn-sparkle" aria-hidden="true">✦</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- End Chat Section -->
+
+    <!-- ====================================================== -->
+    <!-- SECTION 8: CONTACT SECTION                             -->
+    <!-- Description: Reach out form, email link, and direct    -->
+    <!-- social touchpoints.                                    -->
+    <!-- ====================================================== -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">// 07. get in touch</span>
+          <h2 class="section-title">Let's Connect</h2>
+          <p class="section-description">Have a project in mind, an opportunity to discuss, or just want to say hi? Send me a message!</p>
+        </header>
+
+        <div class="contact-wrapper">
+          <!-- Contact Information & Details -->
+          <div class="contact-info">
+            <h3 class="contact-subtitle">Start a Conversation</h3>
+            <p class="contact-text">
+              I am currently open to full-time roles, contract consulting, and open-source collaborations.
+            </p>
+            <div class="contact-details">
+              <div class="contact-detail-item">
+                <span class="detail-icon">✉️</span>
+                <a href="mailto:amulyabhaskar229@gmail.com">amulyabhaskar229@gmail.com</a>
+              </div>
+              <div class="contact-detail-item">
+                <span class="detail-icon">📍</span>
+                <span>Bengaluru, India (or Remote Worldwide)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Semantic Contact Form -->
+          <form class="contact-form" id="contact-form" action="#" method="POST">
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Jane Doe" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="jane@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Your Message</label>
+              <textarea id="message" name="message" class="form-textarea" rows="4" placeholder="Tell me about your project or opportunity..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">
+              <span>Send Message</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+  </main>
+
+  <!-- ======================================================== -->
+  <!-- FOOTER                                                   -->
+  <!-- Description: Copyright notices, credits, and back-to-top -->
+  <!-- navigation link.                                         -->
+  <!-- ======================================================== -->
+  <footer class="site-footer" id="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <p class="footer-copyright">
+          &copy; <span id="current-year">2026</span> Amulya. Built with semantic HTML &amp; modern CSS.
+        </p>
+      </div>
+      <div class="footer-center">
+        <ul class="footer-social" role="list">
+          <li>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Visit my LinkedIn profile">
+              <!-- LinkedIn SVG -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/amulyabhaskar229" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Visit my GitHub profile">
+              <!-- GitHub SVG -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top-link" aria-label="Back to top">
+          Back to Top &uarr;
+        </a>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  </div>
+  <!-- End .site-main-layout -->
+
+  <!-- JavaScript for Night Mode Toggle & Interactivity -->
+  <script src="script.js"></script>
+</body>
+</html>
